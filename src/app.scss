@@ -1,0 +1,167 @@
+@import url('@mdi/font/css/materialdesignicons.css');
+@import url('tailwindcss/dist/tailwind.min.css');
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&family=Bree+Serif&family=Oleo+Script+Swash+Caps&family=Rock+Salt&family=Shippori+Antique+B1&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.text-serif {
+    font-family: 'Bree Serif', serif;
+}
+
+.text-script{
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.text-mono{
+    font-family: 'B612 Mono', monospace;
+}
+
+.text-sans{
+  font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.text-handwriting {
+  font-family: 'Rock Salt', cursive;
+}
+
+.logo{
+    @apply w-16;
+    @apply h-16;
+    @apply mx-auto;
+    @apply p-2;
+    &:hover{
+        @apply transform scale-125;
+        @apply brightness-150;
+        @apply cursor-pointer;
+    }
+}
+
+.active{
+    @apply brightness-150;
+}
+
+  .active {
+    color: #fff;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 10px cyan, 0 0 10px cyan, 0 0 15px cyan,
+      0 0 20px cyan;
+    @apply rounded-md;
+    background: #2A303C;
+    
+    }
+    a     :hover{
+      @apply font-bold underline;
+    }
+   
+    
+  
+  
+  @keyframes animate {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  @keyframes logo-entry {
+    0% {
+      opacity: 0; }
+  
+    80% {
+      opacity: 0; }
+  
+    100% {
+      opacity: 1; } }
+  @keyframes circle-entry {
+    0% {
+      opacity: 0; }
+  
+    20% {
+      opacity: 0; }
+  
+    100% {
+      opacity: 0.4; } }
+  @keyframes input-entry {
+    0% {
+      opacity: 0; }
+  
+    90% {
+      opacity: 0; }
+  
+    100% {
+      opacity: 1; } }
+  @keyframes form-entry {
+    0% {
+      height: 0;
+      width: 0;
+      opacity: 0;
+      padding: 0; }
+  
+    20% {
+      height: 0;
+      border: 1px solid #00a4a2;
+      width: 0;
+      opacity: 0;
+      padding: 0; }
+  
+    40% {
+      width: 0;
+      height: 220px;
+      border: 6px solid #00a4a2;
+      opacity: 1;
+      padding: 0; }
+  
+    100% {
+      height: 220px;
+      width: 500px; } }
+  @keyframes box-glow {
+    0% {
+      border-color: #00b8b6;
+      box-shadow: 0 0 5px rgba(0, 255, 253, 0.2), inset 0 0 5px rgba(0, 255, 253, 0.1), 0 2px 0 black; }
+  
+    100% {
+      border-color: #00fffc;
+      box-shadow: 0 0 20px rgba(0, 255, 253, 0.6), inset 0 0 10px rgba(0, 255, 253, 0.4), 0 2px 0 black; } }
+  @keyframes text-glow {
+    0% {
+      color: #00a4a2;
+      text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000; }
+  
+    100% {
+      color: #00fffc;
+      text-shadow: 0 0 20px rgba(0, 255, 253, 0.6), 0 0 10px rgba(0, 255, 253, 0.4), 0 2px 0 black; } }
+  @keyframes before-glow {
+    0% {
+      border-bottom: 10px solid #00a4a2; }
+  
+    100% {
+      border-bottom: 10px solid #00fffc; } }
+  @keyframes after-glow {
+    0% {
+      border-top: 16px solid #00a4a2; }
+  
+    100% {
+      border-top: 16px solid #00fffc; } }
+  @keyframes circle1 {
+    0% {
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg); }
+  
+    100% {
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg); } }  
