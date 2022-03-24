@@ -10,9 +10,8 @@
     let nav = [
         {title: 'Home', path: '/'},
         {title: 'About', path: '/about'},
-        {title: 'Blog', path: '/blog'},
-        {title: 'Profile', path: '/profile'},
-        {title: 'Admin', path: '/admin'},
+        {title: 'Blog', path: '/blog'},    
+        {title: 'Contact', path: '/contact'},    
         {title: 'Login', path: '/login'},
     ]
 
@@ -72,6 +71,9 @@ let isAuthed = writable(Boolean(page.user))
  <Footer icons={icons} author={author} class='align-end'/>
     {/if}
     {#if $page.url.pathname == '/blog'}
+    <slot />
+    {/if}
+    {#if $page.url.pathname == '/contact'}
     <slot />
     {/if}
     {#if $page.url.pathname == '/profile'}

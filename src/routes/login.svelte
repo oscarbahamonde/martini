@@ -1,6 +1,17 @@
+<script>
+  import { range } from '../store'
+
+  let carpet = range(1,20)
+
+</script>
+
+<svelte:head>
+  <title>Sign into SmartPro</title>
+</svelte:head>
+
 <div class="contenedor">
-    <h1><strong class="text-handwriting p-2">Martini</strong></h1>
-    <a href="/" class="btn btn-warning btn-outline translate-y-24">Back to Home</a>
+    <h1 class="title"><strong class="text-handwriting ml-2">Signin</h1>
+    <a href="/" class="btn btn-warning btn-outline corner-top-right">Back to Home</a>
 
   <section class="stark-login">
    
@@ -13,141 +24,43 @@
           </div>
         </form>
         <div class="hexagons fixed overflow-x-hidden">
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-     
-            <span class="mx-3">&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-     
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span> 
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
-                  <span>&#x2B22;</span>
+          {#each carpet as i}
+
+          <span>&#9634;</span>
+
+          {/each}
+          <br />
+          {#each carpet as i}
+
+          <span>&#9634;</span>
+
+{/each}<br />
+          {#each carpet as i}
+
+          <span>&#9634;</span>
+{/each}<br />
+          {#each carpet as i}
+
+          <span>&#9634;</span>
+
+{/each}<br/>
+{#each carpet as i}
+
+<span>&#9634;</span>
+
+{/each}<br/>
+{#each carpet as i}
+
+<span>&#9634;</span>
+
+{/each}
                 </div>      
-              </section> 
-              
+              </section>        
               <div id="circle1">
                 <div id="inner-cirlce1">
                 </div>
               </div></div>
-
-              
-              
-    
-              
-              
-              
-            <style>
-
-
+  <style>
 .contenedor {
   margin: 0;
   height: 100%;
@@ -163,49 +76,6 @@
   text-align: center;
   }
 
-/* =========================================
-Stark Industries Logo
-========================================= */
-#logo {
-  animation: logo-entry 4s ease-in;
-  width: 300px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 40; }
-
-h1 {
-  animation: text-glow 2s ease-out infinite alternate;
-  color: #00a4a2;
-  font-size: 2rem;
-  font-weight: bold;
-  position: absolute;
-  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
-  top: 50px; }
-  h1:before {
-    animation: before-glow 2s ease-out infinite alternate;
-    border-left: 535px solid transparent;
-    border-bottom: 10px solid #00a4a2;
-    content: ' ';
-    height: 0;
-    position: absolute;
-    right: -74px;
-    top: -10px;
-    width: 0; }
-  h1:after {
-    animation: after-glow 2s ease-out infinite alternate;
-    border-left: 100px solid transparent;
-    border-top: 16px solid #00a4a2;
-    content: ' ';
-    height: 0;
-    position: absolute;
-    right: -85px;
-    top: 24px;
-    transform: rotate(-47deg);
-    width: 0; }
-
-/* =========================================
-Log in form
-========================================= */
 #fade-box {
   animation: input-entry 3s ease-in;
   z-index: 4; }

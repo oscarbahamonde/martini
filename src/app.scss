@@ -1,5 +1,5 @@
 @import url('@mdi/font/css/materialdesignicons.css');
-@import url('tailwindcss/dist/tailwind.min.css');
+@import url('tailwindcss/tailwind.css');
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&family=Bree+Serif&family=Oleo+Script+Swash+Caps&family=Rock+Salt&family=Shippori+Antique+B1&display=swap');
 @tailwind base;
 @tailwind components;
@@ -11,23 +11,23 @@
     box-sizing: border-box;
   }
 
-.text-serif {
+.font-serif {
     font-family: 'Bree Serif', serif;
 }
 
-.text-script{
+.font-script{
     font-family: 'Oleo Script Swash Caps', cursive;
 }
 
-.text-mono{
+.font-mono{
     font-family: 'B612 Mono', monospace;
 }
 
-.text-sans{
+.font-sans{
   font-family: 'Shippori Antique B1', sans-serif;
 }
 
-.text-handwriting {
+.font-handwriting {
   font-family: 'Rock Salt', cursive;
 }
 
@@ -57,11 +57,47 @@
     
     }
     a     :hover{
-      @apply font-bold underline;
+      @apply underline;
     }
    
     
-  
+.corner-top-right{
+ @apply fixed;
+ @apply right-0;
+ i {
+   @apply mdi mdi-home;     
+ }
+}
+
+.title {
+  animation: text-glow 2s ease-out infinite alternate;
+  color: #00a4a2;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+  top: 50px; }
+  .title:before {
+    animation: before-glow 2s ease-out infinite alternate;
+    border-left: 535px solid transparent;
+    border-bottom: 10px solid #00a4a2;
+    content: ' ';
+    height: 0;
+    position: absolute;
+    right: -74px;
+    top: -10px;
+    width: 0; }
+  .title:after {
+    animation: after-glow 2s ease-out infinite alternate;
+    border-left: 100px solid transparent;
+    border-top: 16px solid #00a4a2;
+    content: ' ';
+    height: 0;
+    position: absolute;
+    right: -85px;
+    top: 24px;
+    transform: rotate(-47deg);
+    width: 0; }
   
   @keyframes animate {
     from {

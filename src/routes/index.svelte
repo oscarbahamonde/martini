@@ -1,5 +1,12 @@
-<svelte:head>
-  <title>Welcome</title>
-</svelte:head>
+<script>
+  import Pokemon from '../components/pokemon.svelte'
+</script>
 
-<h1>Hello and welcome to my site!</h1>
+<svelte:head>
+  <title>OB | Home</title>
+</svelte:head>
+<div class="grid">
+  <card class="w-1/3 flex flex-col items-center py-8">
+  <Pokemon />
+</card>
+</div>
